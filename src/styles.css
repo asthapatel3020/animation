@@ -1,0 +1,99 @@
+
+
+body  {
+    background: url(main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ 
+  /* transform: translateY(70%); */
+
+.can-main {position: relative}
+#can {
+  height: 100%;
+  width: 100%;
+}
+
+#canvas {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+ 
+  /* display: none; */
+ 
+}
+#stats {display: none}
+
+#div-img {
+  height: 100%; 
+    width: 100%;
+    position: absolute;
+    /* z-index: 0; */
+    text-align: center;
+    /* transform: translateY(-50%); */
+    /* display: block; */
+    top: 0;
+    bottom: 0;
+    
+   /* animation: fadeInJH ease 2s;
+  -webkit-animation: fadeInJH ease 2s;
+  -moz-animation: fadeInJH ease 2s;
+  -o-animation: fadeInJH ease 2s;
+  -ms-animation: fadeInJH ease 2s;*/
+}
+#myImg {
+  visibility: visible;
+  height: auto;
+  width: 500px;
+    max-width: 70%;
+  transform: scale(1) translateY(-50%);  
+  -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+  -webkit-animation: zoomin 5s ease-in;
+   animation: zoomin 5s ease-in;
+   transition: all 1s ease-in;
+    margin: 0  auto 0;
+    top: 50%;
+    position: relative;
+    
+}
+
+ @-webkit-keyframes zoomin {
+  0% {transform: scale(1) translateY(-50%);} 
+  80% {transform: scale(1) translateY(-50%);}
+   100% {transform: scale(0) translateY(-50%);}
+ }
+ @keyframes zoomin {
+  0% {transform: scale(1) translateY(-50%);} 
+  80% {transform: scale(1) translateY(-50%);}
+   100% {transform: scale(0) translateY(-50%);}
+}
+
+@keyframes fadeInJH {
+  0% {opacity:0; transform: scale(0.6);}
+  100% {opacity:1; transform: scale(1);}
+}
+
+@-moz-keyframes fadeInJH {
+  0% {opacity:0; transform: scale(0.6);}
+  100% {opacity:1; transform: scale(1);}
+}
+
+@-webkit-keyframes fadeInJH {
+  0% {opacity:0; transform: scale(.6);}
+  100% {opacity:1; transform: scale(1);}
+}
+
+@-o-keyframes fadeInJH {
+  0% {opacity:0; transform: scale(.6);}
+  100% {opacity:1; transform: scale(1);}
+}
+
+@-ms-keyframes fadeInJH {
+  0% {opacity:0; transform: scale(.6);}
+  100% {opacity:1; transform: scale(1);}
+}
+ 
